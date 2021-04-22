@@ -1,18 +1,18 @@
-# Salesforce DX Project: Next Steps
+# About
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+This is the Grants Management Campfire Template Repository.
 
-## How Do You Plan to Deploy Your Changes?
+## Updating Template ID
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Update the template value within the config/project-scratch-def.json with the new Trialforce Template ID.
 
-## Configure Your Salesforce DX Project
+## Extend Template Length
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+There may be times where an extended period is needed for a template. The default being 3 days. You can extend this by editing the command in the orgInit.sh file. Change the entry after the -d to the desired number of days.
 
-## Read All About It
+e.g. To Update from 3 days to 7, it would look like this sfdx force:org:create -f config/project-scratch-def.json -d 7 -s -w 60
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## Related Quip Doc
+
+https://salesforce.quip.com/fu2QAlSw2VrD
+
